@@ -1,0 +1,33 @@
+.tabsContainer {
+    display: flex;
+    justify-content: flex-end
+}
+
+.tab {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    margin-bottom: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+.activeTab {
+    border-top: outset 3px blue;
+    background-color: white;
+    border-left: outset 2px #eee;
+    border-right: outset 2px #eee;
+    height: 48px;
+    box-shadow: 2px 2px 2px 2px gray;
+    transform: scale(1.1) rotate(-10deg);
+    transition: all 1s ease;
+}

@@ -1,0 +1,77 @@
+.image {
+    width: 700px;
+    height: 700px;
+    border-radius:350px;
+    position: relative;
+    bottom: 130px;
+    left: 340px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px gray;
+
+    animation: rot 8s ease infinite;
+}
+
+@keyframes rot {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.image2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    position: relative;
+    bottom: 700px;
+    right: 440px;
+    box-shadow: 5px 5px 5px 5px gray;
+
+    animation: diagonal 4s ease infinite;
+}
+
+@keyframes diagonal {
+    0%{ transform: translateX(0px); }
+    50%{ transform: translateX(-300px); }
+    100%{ transform: translateX(0px); }
+}
+
+
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    position: fixed;
+    bottom:450px;
+    left: 630px;
+    letter-spacing: 5px;
+    font-style: italic;
+    transform: rotate(15deg);
+    text-shadow: 2px 2px 2px gray;
+    
+}
+
+.title:hover {
+    transform: rotate(5deg) 
+    scale(1.1);
+    text-decoration: underline;
+
+
+}
+
+.image3 {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 800px;
+    left: 880px;
+    box-shadow: 5px 5px 5px 5px gray;
+
+    animation: move 3s ease infinite;
+}
+
+@keyframes move {
+    0% { transform: rotateZ(0);}
+    50% { transform: rotateZ(-30deg)
+        translateX(50px);}
+    100% { transform: rotateZ(0);}
+}
